@@ -14,3 +14,11 @@ def ex2():
     else:
         print("o numero {} é negativo".format(valor))
 
+def ex3():
+    sexo = input("digite as letras F, M para informar o sexo:")
+    if sexo == 'M' or 'm':
+            print("Masculino")
+    elif sexo == 'F' or 'f':
+            print("Feminino")
+    else:
+        print("Sexo inválido. Digite M para masculino ou F para feminino")
