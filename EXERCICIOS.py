@@ -80,11 +80,9 @@ def ex13():
         elif peso < peso_ideal:
             print('você está abaixo do peso')
         elif peso == peso_ideal:
-            print('você está no peso ideal')
-            
+            print('você está no peso ideal')           
 
-   
-
+  
 def ex14():
     peso = float(input("digite o peso de peixes pescados: \n"))
     peso_maximo = 50
@@ -99,6 +97,24 @@ def ex15():
     salario_hora = float(input("digite o salario que ganha por hora:\n"))
     horas_trabalhadas = int(input("digite o numero de horas trabalhadas no mes:\n"))
     total_salario = salario_hora * horas_trabalhadas
+def ex15():
+    salario_hora = float(input("digite quanto vc ganha por hora:"))
+    horas_trabalho = int(input("digite as horas trabalhadas por mes:"))
+    
+    salario_bruto = salario_hora * horas_trabalho 
+    imposto_renda = salario_bruto * 0.11
+    inss = salario_bruto * 0.08    
+    sindicato = salario_bruto * 0.05
+    descontos = imposto_renda + inss + sindicato
+    salario_liquido = salario_bruto - descontos
+    
+    print("o salario bruto é: {}\n".format(salario_bruto))
+    print("o total de desconto de imposto de renda é: {}\n".format(imposto_renda))
+    print("o total de desconto de inss é:{}\n".format(inss))
+    print("o total de desconto de sindicato é:{}\n".format(sindicato))
+    print("o salario liquido é:{}\n".format(salario_liquido))
+
+
     
     
     
