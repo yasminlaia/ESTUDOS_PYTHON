@@ -23,3 +23,11 @@ def ex3():
     else:
         print("Sexo inválido. Digite M para masculino ou F para feminino")
 
+#rever
+def ex4():
+    letra = input("Digite uma letra, e descubra se ela é uma consoante ou uma vogal: \n")
+    if letra == 'a' or 'e' or 'i' or 'o' or 'u':
+        print("esta letra é uma vogal")
+    else:
+        print("esta letra é uma consoante")
+
