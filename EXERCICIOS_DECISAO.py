@@ -54,3 +54,21 @@ def ex6():
         print("o segundo numero é maior")
     else:
         print("o terceiro numero é maior")
+        
+def ex7():
+    n1 = int(input("digite o primeiro numero:\n"))
+    n2 = int(input("digite o segundo numero:\n"))
+    n3 = int(input("digite o terceiro numero:\n"))
+
+    if n1>n2 and n1>n3:
+        print("o primeiro numero é maior")
+    else:
+        print("o primeiro numero é menor")
+    if n2>n1 and n2>n3:
+        print("o segundo numero é maior")
+    else:
+        print("o segundo numero é menor")
+    if n3>n1 and n3>n2:
+        print("o terceiro numero é maior")
+    else:
+        print("o terceiro numero é menor")
