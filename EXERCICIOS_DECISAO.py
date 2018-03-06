@@ -42,3 +42,15 @@ def ex5():
             print("Aprovado com distinção")
     else:
         print("Aluno reprovado")
+        
+def ex6():
+    n1 = int(input("digite o primeiro numero:\n"))
+    n2 = int(input("digite o segundo numero:\n"))
+    n3 = int(input("digite o terceiro numero:\n"))
+    
+    if n1>n2 and n1>n3:
+        print("o primeiro numero é maior")
+    elif n2>n1 and n2>n3:
+        print("o segundo numero é maior")
+    else:
+        print("o terceiro numero é maior")
