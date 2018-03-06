@@ -16,9 +16,10 @@ def ex2():
 
 def ex3():
     sexo = input("digite as letras F, M para informar o sexo:")
-    if sexo == 'M' or 'm':
-            print("Masculino")
-    elif sexo == 'F' or 'f':
+    if sexo == 'M':
+        print("Masculino")
+    elif sexo == 'F':
             print("Feminino")
     else:
         print("Sexo inválido. Digite M para masculino ou F para feminino")
+
