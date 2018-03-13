@@ -72,3 +72,16 @@ def ex7():
         print("o terceiro numero é maior")
     else:
         print("o terceiro numero é menor")
+        
+def ex8():
+    
+p1 = float(input("digite o preço do primeiro produto em reais:\n"))
+p2 = float(input("digite o preço do segundo produto em reais:\n"))
+p3 = float(input("digite o preço do terceiro produto em reais:\n"))
+
+if p1<p2 and p1<p3:
+    print("o primeiro produto com preço de R$ {} é mais barato.".format(p1))
+elif p2<p1 and p2<p3:
+    print("o segundo produto com preço de R$ {} é mais barato.".format(p2))
+elif p3<p1 and p3<p2:
+    print("o terceiro produto com preço de R$ {} é mais barato.".format(p3))
