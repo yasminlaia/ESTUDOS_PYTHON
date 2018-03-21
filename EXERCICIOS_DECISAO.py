@@ -85,3 +85,24 @@ elif p2<p1 and p2<p3:
     print("o segundo produto com preço de R$ {} é mais barato.".format(p2))
 elif p3<p1 and p3<p2:
     print("o terceiro produto com preço de R$ {} é mais barato.".format(p3))
+    
+def ex11():
+    salario = float(input("digite o salario do colaborador:"))
+    porcentagem = '0' 
+    if salario <=280:
+        aumento = salario*0.20
+        porcentagem = '20%'
+    elif salario > 280 and salario <=700 :
+        aumento = salario*0.15
+        porcentagem = '15%'
+    elif salario > 700 and salario <=1500:
+        aumento = salario * 0.10
+        porcentagem = '10%'
+    elif salario > 1500:
+        aumento = salario * 0.05
+        porcentagem = '5%'
+    
+    print("o salario sem reajuste é: {} reais".format(salario))
+    print("o valor do aumento é: {} reais".format(aumento))
+    print("o salario com aumento é: {} reais".format(salario+aumento))
+    print("porcentagem do aumento é: {} %".format(porcentagem))
