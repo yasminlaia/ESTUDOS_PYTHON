@@ -85,6 +85,24 @@ elif p2<p1 and p2<p3:
     print("o segundo produto com preço de R$ {} é mais barato.".format(p2))
 elif p3<p1 and p3<p2:
     print("o terceiro produto com preço de R$ {} é mais barato.".format(p3))
+
+def ex9():
+    numeros = []
+    menores = []
+    cont = 0
+    n1 = int(input("digite o primeiro numero:"))
+    n2 = int(input("digite o segundo numero:"))
+    n3 = int(input("digite o terceiro numero:"))
+    numeros.append(n1)
+    numeros.append(n2)
+    numeros.append(n3)
+    while numeros is not None :
+        if len(numeros) > 0  :            
+            menores.append(max(numeros))
+            numeros.remove(max(numeros))
+        elif len(numeros) == 0:
+            break
+    print(menores)    
     
 def ex11():
     salario = float(input("digite o salario do colaborador:"))
