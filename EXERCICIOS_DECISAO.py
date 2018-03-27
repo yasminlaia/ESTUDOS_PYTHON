@@ -26,10 +26,19 @@ def ex3():
 #rever
 def ex4():
     letra = input("Digite uma letra, e descubra se ela é uma consoante ou uma vogal: \n")
-    if letra == 'a' or 'e' or 'i' or 'o' or 'u':
+    if letra == 'a' or letra =='e' or letra == 'i' or letra =='o' or letra == 'u':
         print("esta letra é uma vogal")
     else:
         print("esta letra é uma consoante")
+def ex4():
+    teste = 'aeiou'
+    while True :
+        letra = input("Digite uma letra, e descubra se ela é uma consoante ou uma vogal: \n")
+        if letra in teste:
+            print("esta letra é uma vogal")
+        else:
+            print("esta letra é uma consoante")
+ex4()
 
 def ex5():
     n1 = float(input("digite a primeira nota: \n"))
