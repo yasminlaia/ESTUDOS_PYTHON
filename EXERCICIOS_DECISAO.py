@@ -23,7 +23,7 @@ def ex3():
     else:
         print("Sexo inválido. Digite M para masculino ou F para feminino")
 
-#rever
+
 def ex4():
     letra = input("Digite uma letra, e descubra se ela é uma consoante ou uma vogal: \n")
     if letra == 'a' or letra =='e' or letra == 'i' or letra =='o' or letra == 'u':
@@ -111,7 +111,21 @@ def ex9():
             numeros.remove(max(numeros))
         elif len(numeros) == 0:
             break
-    print(menores)    
+    print(menores) 
+    
+def ex10():
+    turno = input("digite o periodo que estuda: M-matutino V-Vespertino ou N-Noturno")
+
+    turno = turno.lower()
+    if turno == 'm':
+        print('Bom  dia')
+    elif turno == 'v':
+        print("Boa tarde")
+    elif turno == 'n':
+        print("Boa noite")
+    else:
+        print("Valor invalido")
+        
     
 def ex11():
     salario = float(input("digite o salario do colaborador:"))
