@@ -147,3 +147,25 @@ def ex11():
     print("o valor do aumento é: {} reais".format(aumento))
     print("o salario com aumento é: {} reais".format(salario+aumento))
     print("porcentagem do aumento é: {} %".format(porcentagem))
+    
+def ex13():
+    semana = int(input("Digite o dia da semana que deseja: \n1-Domingo \n2-Segunda \n3-Terça \n4-Quarta \n5-Quinta \n6-Sexta \n7-Sábado \n"))
+
+    if semana == 1:
+        print("O dia da semana é Domingo")
+    elif semana == 2:
+        print("O dia da semana é Segunda")
+    elif semana == 3:
+        print("O dia da semana é Terça")
+    elif semana == 4:
+        print("O dia da semana é Quarta")
+    elif semana == 5:
+        print("O dia da semana é Quinta")
+    elif semana == 6:
+        print("O dia da semana é Sexta")
+    elif semana == 7:
+        print("O dia da semana é Sábado")
+    else:
+        print("Valor inválido. Digite de 1 a 7")
+        
+
