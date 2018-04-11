@@ -168,16 +168,20 @@ def ex13():
     else:
         print("Valor inválido. Digite de 1 a 7")
         
-    def ex14():
+def ex14():
     n=0
     while n<5:
-        n+=1
         nome = input("Nome completo do aluno:\n")
         disciplina = input("Disciplina:\n")
-        n1 = float(input("Nota da primeira prova:\n"))
-        n2 = float(input("Nota da segunda prova:\n"))
+        while True:
+            n1 = float(input("Nota da primeira prova:\n"))
+            if n1 >= 0 and n1 <= 10:
+                break
+        while True:
+            n2 = float(input("Nota da segunda prova:\n"))
+            if n2 >= 0 and n2 <= 10 :
+                break
         media = (n1 + n2) / 2
-
         if n1 >10 or n2 > 10:
             print("As notas devem ser entre 0 e 10")
         elif media >=9 and media <=10:
@@ -202,7 +206,8 @@ def ex13():
             print("ALUNO REPROVADO")
             print("CONCEITO E")
             print("Média total: {}".format(media))
-
-
+        n+=1
+        resposta = input('digite 0 (zero) para sair\n')
+        if resposta == '0' or resposta == 'zero':
+            break
         
-
